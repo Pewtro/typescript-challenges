@@ -1,5 +1,3 @@
-//https://github.com/type-challenges/type-challenges/blob/main/questions/00013-warm-hello-world/README.md
-
 /*
   13 - Hello World
   -------
@@ -35,7 +33,6 @@ type HelloWorld = string; // expected to be a string
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect, NotAny } from '@type-challenges/utils';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 type cases = [Expect<NotAny<HelloWorld>>, Expect<Equal<HelloWorld, string>>];
 
 /* _____________ Further Steps _____________ */
