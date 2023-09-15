@@ -1,0 +1,33 @@
+{
+  "name": "type-challenges",
+  "version": "1.0.0",
+  "description": "Repo to host type challenges solutions",
+  "author": "Putro",
+  "license": "ISC",
+  "devDependencies": {
+    "@putstack/eslint-config-typescript": "1.1.0",
+    "@putstack/prettier-config": "1.1.0",
+    "@type-challenges/utils": "0.1.1",
+    "concurrently": "8.2.1",
+    "husky": "8.0.3",
+    "lint-staged": "14.0.1",
+    "typescript": "5.2.2"
+  },
+  "scripts": {
+    "lint": "eslint --format stylish --max-warnings 0 --cache .",
+    "lint:fix": "pnpm lint --fix",
+    "prettier": "prettier . --write .",
+    "prepare": "husky install",
+    "stylecheck": "prettier --check .",
+    "test:ci": "concurrently \"pnpm:lint\" \"pnpm:typecheck\" \"pnpm:stylecheck\" ",
+    "typecheck": "tsc"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,md,mdx,yml}": [
+      "prettier --write"
+    ],
+    "*.{ts,tsx,js,jsx}": [
+      "pnpm --silent lint:fix"
+    ]
+  }
+}
