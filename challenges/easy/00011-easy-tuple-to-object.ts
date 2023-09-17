@@ -38,7 +38,12 @@ type cases = [
   Expect<
     Equal<
       TupleToObject<typeof tuple>,
-      { tesla: 'tesla'; 'model 3': 'model 3'; 'model X': 'model X'; 'model Y': 'model Y' }
+      {
+        tesla: 'tesla';
+        'model 3': 'model 3';
+        'model X': 'model X';
+        'model Y': 'model Y';
+      }
     >
   >,
   Expect<Equal<TupleToObject<typeof tupleNumber>, { 1: 1; 2: 2; 3: 3; 4: 4 }>>,
