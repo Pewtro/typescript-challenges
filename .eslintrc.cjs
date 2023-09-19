@@ -7,7 +7,7 @@ module.exports = {
   },
   rules: {
     //cases in typescript-challenges are always unused
-    '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: 'cases|error' }],
+    '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: '.*[c|C]ases|error' }],
     //ts-expect-error is often used in typescript-challenges
     '@typescript-eslint/ban-ts-comment': ['error', { 'ts-expect-error': false }],
     '@typescript-eslint/ban-types': 'off',
