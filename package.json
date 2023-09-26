@@ -22,7 +22,7 @@
     "prepare": "husky install",
     "stylecheck": "prettier --check .",
     "test:ci": "concurrently \"pnpm:lint\" \"pnpm:typecheck\" \"pnpm:stylecheck\" ",
-    "typecheck": "tsc"
+    "typecheck": "tsc --noEmit"
   },
   "lint-staged": {
     "*.{ts,tsx,js,mjs,cjs,jsx,md,mdx,yml,yaml}": [
