@@ -15,8 +15,8 @@ devDependencies:
     specifier: 0.1.1
     version: 0.1.1
   '@types/node':
-    specifier: 20.7.0
-    version: 20.7.0
+    specifier: 20.7.1
+    version: 20.7.1
   concurrently:
     specifier: 8.2.1
     version: 8.2.1
@@ -195,9 +195,9 @@ packages:
       { integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA== }
     dev: true
 
-  /@types/node@20.7.0:
+  /@types/node@20.7.1:
     resolution:
-      { integrity: sha512-zI22/pJW2wUZOVyguFaUL1HABdmSVxpXrzIqkjsHmyUjNhPoWM1CKfvVuXfetHhIok4RY573cqS0mZ1SJEnoTg== }
+      { integrity: sha512-LT+OIXpp2kj4E2S/p91BMe+VgGX2+lfO+XTpfXhh+bCk2LkQtHZSub8ewFBMGP5ClysPjTDFa4sMI8Q3n4T0wg== }
     dev: true
 
   /@types/normalize-package-data@2.4.1:
