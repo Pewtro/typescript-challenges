@@ -9,7 +9,7 @@
     "@putstack/eslint-config-typescript": "1.1.1",
     "@putstack/prettier-config": "1.2.2",
     "@type-challenges/utils": "0.1.1",
-    "@types/node": "20.8.2",
+    "@types/node": "20.8.4",
     "concurrently": "8.2.1",
     "husky": "8.0.3",
     "lint-staged": "14.0.1",
