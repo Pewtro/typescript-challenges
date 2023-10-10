@@ -6,7 +6,7 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "@putstack/eslint-config-typescript": "1.1.1",
+    "@putstack/eslint-config-typescript": "1.1.2",
     "@putstack/prettier-config": "1.2.2",
     "@type-challenges/utils": "0.1.1",
     "@types/node": "20.8.4",
