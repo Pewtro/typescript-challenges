@@ -12,10 +12,10 @@
     "@putstack/eslint-config-typescript": "1.1.2",
     "@putstack/prettier-config": "1.2.2",
     "@type-challenges/utils": "0.1.1",
-    "@types/node": "20.8.6",
-    "concurrently": "8.2.1",
+    "@types/node": "20.8.8",
+    "concurrently": "8.2.2",
     "husky": "8.0.3",
-    "lint-staged": "15.0.1",
+    "lint-staged": "15.0.2",
     "typescript": "5.2.2"
   },
   "scripts": {
