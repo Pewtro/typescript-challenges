@@ -36,8 +36,8 @@ type cases = [
   Expect<Equal<ComplexObject, MyReturnType<() => ComplexObject>>>,
   Expect<Equal<Promise<boolean>, MyReturnType<() => Promise<boolean>>>>,
   Expect<Equal<() => 'foo', MyReturnType<() => () => 'foo'>>>,
-  Expect<Equal<1 | 2, MyReturnType<typeof function_>>>,
   Expect<Equal<1 | 2, MyReturnType<typeof function1>>>,
+  Expect<Equal<1 | 2, MyReturnType<typeof function2>>>,
 ];
 
 interface ComplexObject {
@@ -46,9 +46,9 @@ interface ComplexObject {
   prev(): number;
 }
 
-const function_ = (v: boolean) => (v ? 1 : 2);
+const function1 = (v: boolean) => (v ? 1 : 2);
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const function1 = (v: boolean, _w: any) => (v ? 1 : 2);
+const function2 = (v: boolean, _w: any) => (v ? 1 : 2);
 
 /* _____________ Further Steps _____________ */
 /*

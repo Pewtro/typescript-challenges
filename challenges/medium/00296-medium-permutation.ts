@@ -1,3 +1,4 @@
+/* eslint-disable sonar/max-union-size */
 /*
   296 - Permutation
   -------
