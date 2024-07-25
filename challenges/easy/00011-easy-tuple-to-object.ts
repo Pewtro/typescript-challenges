@@ -39,10 +39,10 @@ type cases = [
     Equal<
       TupleToObject<typeof tuple>,
       {
-        tesla: 'tesla';
         'model 3': 'model 3';
         'model X': 'model X';
         'model Y': 'model Y';
+        tesla: 'tesla';
       }
     >
   >,
@@ -52,7 +52,7 @@ type cases = [
 ];
 
 // @ts-expect-error
-type error = TupleToObject<[[1, 2], {}]>;
+type error = TupleToObject<[[1, 2], object]>;
 
 /* _____________ Further Steps _____________ */
 /*

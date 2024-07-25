@@ -1,4 +1,3 @@
-/* eslint-disable sonar/max-union-size */
 /*
   296 - Permutation
   -------
@@ -32,7 +31,7 @@ type cases = [
   >,
   Expect<
     Equal<
-      Permutation<'B' | 'A' | 'C'>,
+      Permutation<'A' | 'B' | 'C'>,
       ['A', 'B', 'C'] | ['A', 'C', 'B'] | ['B', 'A', 'C'] | ['B', 'C', 'A'] | ['C', 'A', 'B'] | ['C', 'B', 'A']
     >
   >,

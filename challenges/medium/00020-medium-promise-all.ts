@@ -1,4 +1,3 @@
-/* eslint-disable sonarjs/no-use-of-empty-return-value */
 /*
   20 - Promise.all
   -------

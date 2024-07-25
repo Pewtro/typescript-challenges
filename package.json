@@ -9,20 +9,21 @@
     "node": ">=18.12.0 <20 || >=20.8.0"
   },
   "devDependencies": {
-    "@putstack/eslint-config-typescript": "2.4.0",
-    "@putstack/prettier-config": "1.4.0",
+    "@putstack/eslint-config-typescript": "3.0.0-next.10",
+    "@putstack/prettier-config": "1.4.1",
     "@type-challenges/utils": "0.1.1",
-    "@types/node": "20.11.30",
-    "husky": "9.0.11",
-    "lint-staged": "15.2.2",
-    "npm-run-all2": "6.1.2",
-    "typescript": "5.4.3"
+    "@types/node": "20.14.12",
+    "eslint": "9.7.0",
+    "husky": "9.1.1",
+    "lint-staged": "15.2.7",
+    "npm-run-all2": "6.2.2",
+    "typescript": "5.5.4"
   },
   "scripts": {
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "pnpm lint --fix",
     "prettier": "prettier . --write .",
-    "prepare": "husky install",
+    "prepare": "husky",
     "stylecheck": "prettier --check .",
     "test:ci": "npm-run-all -l -p lint typecheck stylecheck",
     "typecheck": "tsc --noEmit"

@@ -25,9 +25,9 @@ type MyParameters<T extends (...arguments_: Array<any>) => any> = T extends (...
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '@type-challenges/utils';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
+// eslint-disable-next-line @typescript-eslint/no-empty-function
 const foo = (_argument1: string, _argument2: number): void => {};
-// eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
+// eslint-disable-next-line @typescript-eslint/no-empty-function
 const bar = (_argument1: boolean, _argument2: { a: 'A' }): void => {};
 // eslint-disable-next-line @typescript-eslint/no-empty-function
 const baz = (): void => {};

@@ -39,9 +39,9 @@
 
 /* _____________ Your Code Here _____________ */
 
-interface Chainable<T extends {} = {}> {
-  option<K extends string, V>(key: K extends keyof T ? never : K, value: V): Chainable<Omit<T, K> & Record<K, V>>;
+interface Chainable<T extends object = object> {
   get(): T;
+  option<K extends string, V>(key: K extends keyof T ? never : K, value: V): Chainable<Omit<T, K> & Record<K, V>>;
 }
 
 /* _____________ Test Cases _____________ */
@@ -70,10 +70,10 @@ type cases = [
 ];
 
 interface Expected1 {
-  foo: number;
   bar: {
     value: string;
   };
+  foo: number;
   name: string;
 }
 

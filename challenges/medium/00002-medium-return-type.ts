@@ -25,6 +25,7 @@
 
 /* _____________ Your Code Here _____________ */
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 type MyReturnType<T> = Function extends T ? T : T extends (...arguments_: Array<any>) => infer R ? R : never;
 
 /* _____________ Test Cases _____________ */
@@ -47,7 +48,7 @@ interface ComplexObject {
 }
 
 const function1 = (v: boolean) => (v ? 1 : 2);
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 const function2 = (v: boolean, _w: any) => (v ? 1 : 2);
 
 /* _____________ Further Steps _____________ */

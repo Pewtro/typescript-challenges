@@ -40,15 +40,15 @@ import type { Equal, Expect } from '@type-challenges/utils';
 
 type cases = [
   Expect<Equal<Expected1, MyPick<Todo, 'title'>>>,
-  Expect<Equal<Expected2, MyPick<Todo, 'title' | 'completed'>>>,
+  Expect<Equal<Expected2, MyPick<Todo, 'completed' | 'title'>>>,
   // @ts-expect-error
-  MyPick<Todo, 'title' | 'completed' | 'invalid'>,
+  MyPick<Todo, 'completed' | 'invalid' | 'title'>,
 ];
 
 interface Todo {
-  title: string;
-  description: string;
   completed: boolean;
+  description: string;
+  title: string;
 }
 
 interface Expected1 {
@@ -56,8 +56,8 @@ interface Expected1 {
 }
 
 interface Expected2 {
-  title: string;
   completed: boolean;
+  title: string;
 }
 
 /* _____________ Further Steps _____________ */

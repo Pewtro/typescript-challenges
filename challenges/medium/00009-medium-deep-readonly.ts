@@ -36,7 +36,8 @@
 
 /* _____________ Your Code Here _____________ */
 
-type PrimaryTypes = PropertyKey | Function;
+// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
+type PrimaryTypes = Function | PropertyKey;
 type DeepReadonly<T> = {
   readonly [key in keyof T]: T[key] extends PrimaryTypes ? T[key] : DeepReadonly<T[key]>;
 };

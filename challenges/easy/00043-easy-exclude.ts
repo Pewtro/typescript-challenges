@@ -29,7 +29,8 @@ import type { Equal, Expect } from '@type-challenges/utils';
 type cases = [
   Expect<Equal<MyExclude<'a' | 'b' | 'c', 'a'>, 'b' | 'c'>>,
   Expect<Equal<MyExclude<'a' | 'b' | 'c', 'a' | 'b'>, 'c'>>,
-  Expect<Equal<MyExclude<string | number | (() => void), Function>, string | number>>,
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
+  Expect<Equal<MyExclude<(() => void) | number | string, Function>, number | string>>,
 ];
 
 /* _____________ Further Steps _____________ */

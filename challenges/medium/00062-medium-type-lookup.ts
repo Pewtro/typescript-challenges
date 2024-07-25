@@ -37,14 +37,14 @@ type LookUp<U, T extends string> = {
 import type { Equal, Expect } from '@type-challenges/utils';
 
 interface Cat {
+  breeds: 'Abyssinian' | 'Bengal' | 'Curl' | 'Shorthair';
   type: 'cat';
-  breeds: 'Abyssinian' | 'Shorthair' | 'Curl' | 'Bengal';
 }
 
 interface Dog {
+  breeds: 'Boxer' | 'Brittany' | 'Bulldog' | 'Hound';
+  color: 'black' | 'brown' | 'white';
   type: 'dog';
-  breeds: 'Hound' | 'Brittany' | 'Bulldog' | 'Boxer';
-  color: 'brown' | 'white' | 'black';
 }
 
 type Animal = Cat | Dog;

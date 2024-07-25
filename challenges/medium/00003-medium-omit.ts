@@ -39,21 +39,21 @@ import type { Equal, Expect } from '@type-challenges/utils';
 
 type cases = [
   Expect<Equal<Expected1, MyOmit<Todo, 'description'>>>,
-  Expect<Equal<Expected2, MyOmit<Todo, 'description' | 'completed'>>>,
+  Expect<Equal<Expected2, MyOmit<Todo, 'completed' | 'description'>>>,
 ];
 
 // @ts-expect-error
 type error = MyOmit<Todo, 'description' | 'invalid'>;
 
 interface Todo {
-  title: string;
-  description: string;
   completed: boolean;
+  description: string;
+  title: string;
 }
 
 interface Expected1 {
-  title: string;
   completed: boolean;
+  title: string;
 }
 
 interface Expected2 {

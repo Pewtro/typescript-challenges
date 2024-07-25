@@ -24,7 +24,6 @@
 
 /* _____________ Your Code Here _____________ */
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 type Last<T extends Array<any>> = T extends [...infer _, infer U] ? U : T[number];
 
 /* _____________ Test Cases _____________ */
